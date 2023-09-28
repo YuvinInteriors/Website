@@ -3,10 +3,11 @@ body{
     display: flex;
     height: 100vh;
     justify-content: center;
+    padding: 8px;
     align-items: center;
 }
 
-h1{
+h4{
     font-family: monospace;
     color: white;
 }
