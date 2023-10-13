@@ -1,14 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Yuvin Interiors</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" />
+	<script defer src="./output/main.js"></script>
 </head>
+
 <body>
-    <!-- <h4>Yuvin Interiors Website Coming Soon...💖</h4> -->
-    <img id="image" src="bg_img.jpg" alt="coming soon image">
+	<nav class="menu">
+		<a href="#what-we-do" class="menu__item">
+			<svg class="icon tools" viewBox="0 0 16 16">
+				<path
+					d="M2.7626 13.3074 4.3288 10.0826 11.1752 3.1218 12.9489 4.8349 6 11.74zM11.1776 3.1219a1 1 0 011.7741 1.7179M9.768 7.9961 13.3699 11.5999 11.6001 13.36 7.9876 9.762M6.3067 8.0719 2.5501 4.3204 4.2662 2.5412 8.0468 6.3026M5.1096 3.3916 4.3657 4.1354M5.9612 4.2217 4.8616 5.4075M6.9637 5.235 6.36 5.8602M10.4416 8.6723 9.6807 9.53M11.4267 9.6921 10.2323 10.9849M12.4244 10.6617 11.7078 11.3502M6.0031 11.7426 4.3304 10.0869" />
+			</svg>
+			<p>What We Do</p>
+		</a>
+
+		<a href="#how-it-works" class="menu__item">
+			<svg class="icon" viewBox="5 0 32 36">
+				<path
+					d=" M22.926,26.054l-1.977,0.729c-0.221,0.082-0.391,0.263-0.455,0.489c-0.13,0.454-0.312,0.896-0.54,1.311 c-0.114,0.205-0.122,0.453-0.023,0.667l0.883,1.909c-0.23,0.259-0.478,0.505-0.737,0.735l-1.91-0.886 c-0.212-0.098-0.46-0.088-0.666,0.023c-0.42,0.232-0.862,0.415-1.311,0.548c-0.226,0.063-0.407,0.232-0.488,0.453l-0.722,1.969 c-0.354,0.023-0.689,0.023-1.042,0l-0.727-1.973c-0.082-0.221-0.263-0.39-0.488-0.455c-0.464-0.133-0.905-0.317-1.309-0.542 c-0.207-0.115-0.455-0.125-0.669-0.025L8.837,31.89c-0.262-0.23-0.508-0.479-0.735-0.733l0.883-1.913 c0.099-0.214,0.089-0.461-0.025-0.667c-0.23-0.417-0.413-0.856-0.542-1.308c-0.065-0.226-0.234-0.41-0.456-0.49L5.99,26.054 c-0.02-0.346-0.02-0.695,0-1.039l1.976-0.727c0.22-0.08,0.388-0.263,0.455-0.487c0.133-0.463,0.315-0.903,0.541-1.311 c0.114-0.207,0.124-0.455,0.025-0.668l-0.883-1.906c0.228-0.257,0.475-0.503,0.737-0.737l1.91,0.884 c0.213,0.1,0.461,0.09,0.667-0.023c0.418-0.232,0.858-0.415,1.307-0.543c0.227-0.065,0.409-0.234,0.49-0.456l0.723-1.973 c0.346-0.021,0.696-0.021,1.042,0l0.727,1.977c0.081,0.224,0.263,0.393,0.489,0.456c0.458,0.132,0.899,0.313,1.309,0.539 c0.205,0.113,0.453,0.123,0.667,0.023l1.906-0.884c0.261,0.23,0.507,0.477,0.737,0.737l-0.883,1.912 c-0.099,0.213-0.09,0.461,0.024,0.666c0.229,0.415,0.412,0.855,0.543,1.311c0.064,0.225,0.234,0.407,0.455,0.487l1.973,0.723 C22.945,25.36,22.945,25.71,22.926,26.054zM14.458,21.109c-2.441,0-4.429,1.986-4.429,4.43c0,2.438,1.987,4.422,4.429,4.422c2.44,0,4.426-1.984,4.426-4.422 C18.884,23.096,16.898,21.109,14.458,21.109zM32.486,12.089 c0.043,0.386,0.039,0.773-0.008,1.15c-0.03,0.234,0.057,0.469,0.228,0.63l1.226,1.148c-0.081,0.222-0.172,0.435-0.273,0.64 l-1.675-0.082c-0.236-0.01-0.461,0.09-0.608,0.272c-0.246,0.304-0.525,0.578-0.828,0.816c-0.185,0.145-0.289,0.369-0.281,0.605 l0.057,1.671c-0.21,0.098-0.427,0.187-0.646,0.264l-1.129-1.245c-0.141-0.153-0.34-0.24-0.545-0.24c-0.027,0-0.055,0-0.08,0.004 c-0.393,0.042-0.781,0.038-1.154-0.008c-0.232-0.03-0.469,0.056-0.629,0.229l-1.146,1.224c-0.225-0.082-0.438-0.175-0.643-0.272 l0.081-1.677c0.012-0.236-0.091-0.461-0.273-0.609c-0.303-0.246-0.575-0.522-0.81-0.822c-0.145-0.188-0.37-0.292-0.607-0.286 l-1.674,0.058c-0.047-0.104-0.094-0.209-0.14-0.322c-0.045-0.109-0.085-0.218-0.123-0.323l1.243-1.129 c0.174-0.158,0.264-0.391,0.237-0.623c-0.04-0.38-0.036-0.772,0.009-1.162c0.028-0.232-0.057-0.465-0.229-0.626l-1.225-1.145 c0.08-0.22,0.17-0.433,0.272-0.641l1.68,0.079c0.235,0.012,0.46-0.09,0.608-0.272c0.24-0.296,0.52-0.572,0.826-0.816 c0.184-0.145,0.287-0.367,0.279-0.602l-0.055-1.675c0.211-0.097,0.428-0.185,0.646-0.262l1.127,1.245 c0.159,0.173,0.39,0.261,0.622,0.238c0.384-0.041,0.776-0.039,1.164,0.008c0.232,0.026,0.466-0.058,0.624-0.23l1.144-1.222 c0.219,0.08,0.435,0.173,0.646,0.272l-0.08,1.675c-0.012,0.234,0.088,0.459,0.268,0.607c0.311,0.251,0.582,0.532,0.814,0.828 c0.146,0.184,0.369,0.288,0.605,0.282l1.678-0.056c0.096,0.209,0.184,0.424,0.261,0.647l-1.245,1.129 C32.551,11.622,32.462,11.854,32.486,12.089zM27.383,9.585c-0.393,0-0.777,0.075-1.143,0.224c-1.553,0.628-2.303,2.404-1.674,3.963 c0.469,1.152,1.576,1.896,2.822,1.896l0,0c0.39,0,0.771-0.074,1.133-0.221c0.756-0.306,1.346-0.886,1.662-1.635 c0.318-0.749,0.326-1.573,0.021-2.326C29.738,10.331,28.627,9.585,27.383,9.585z " />
+			</svg>
+			<p>How it works</p>
+		</a>
+
+		
+
+		<a href="#home" class="menu__item active">
+			<svg class="icon" width="24px" height="24px" viewBox="0 0 24 24">
+				<path d="M2 12L5 9.3M22 12L19 9.3M19 9.3L12 3L5 9.3M19 9.3V21H5V9.3" />
+			</svg>
+			<p>Home</p>
+		</a>
+
+		<a href="#reviews" class="menu__item">
+			<svg class="icon" viewBox="0 0 24 24">
+				<path
+					d="M20.5 2H7.5C6.122 2 5 3.683 5 5.75V15H3.5C2.122 15 1 16.57 1 18.5S2.122 22 3.5 22h13c1.378 0 2.5-1.683 2.5-3.75V9h1.5C21.878 9 23 7.43 23 5.5S21.878 2 20.5 2zM5 15 16.6 15C13.9 17.5 15.1 20.9 16.5 22M8 6.5 16 6.5M8 9.5 16 9.5M8 12.5 16 12.5M19 9 19 5.8Q18.9 4 20.5 2" />
+			</svg>
+			<p>Reviews</p>
+		</a>
+
+		<a href="#contact-us" class="menu__item" >
+			<svg class="icon phone" width="24px" height="24px" viewBox="0 0 64 64">
+				<path
+					d="M37.063,18.062h-0.0596c-0.5522,0-0.9702,0.4478-0.9702,1s0.4775,1,1.0298,1s1-0.4478,1-1S37.6152,18.062,37.063,18.062z ">
+				</path>
+				<path
+					d="M45.1787,18.062H45.123c-0.5522,0-0.9722,0.4478-0.9722,1s0.4756,1,1.0278,1s1-0.4478,1-1S45.731,18.062,45.1787,18.062z ">
+				</path>
+				<path
+					d="M53.2983,18.062h-0.0596c-0.5522,0-0.9702,0.4478-0.9702,1s0.4775,1,1.0298,1s1-0.4478,1-1 S53.8506,18.062,53.2983,18.062z">
+				</path>
+				<path
+					d="M45.1953,45.9268c-5.1489-2.9038-6.6909-2.6665-10.6172-0.4468c-2.0146,1.3389-4.4404,0.5225-8.6563-2.9111 c-0.8276-0.6743-1.6592-1.4263-2.4688-2.2319c-0.8091-0.8125-1.5605-1.644-2.2344-2.4722 c-3.1782-3.8999-4.0435-7.459-3.0112-8.5317c3.042-3.271,2.3516-5.957-0.3335-10.7173c-1.6172-3.0591-3.3931-6.104-5.7568-6.8027 c-1.7139-0.5034-4.2588,0.8154-5.0166,1.3184c-1.9492,1.2983-3.8003,3.5947-4.8311,5.9937 c-1.896,4.4136-1.3931,9.7329-0.29,13.2397c1.812,5.749,6.1611,12.4063,11.6348,17.8086 c5.4043,5.4761,12.0615,9.8242,17.8081,11.6313c1.8154,0.5728,4.1167,0.9844,6.5283,0.9844c2.2437,0,4.583-0.3564,6.7124-1.271 c2.3989-1.0327,4.6938-2.8838,5.9888-4.8306c0.5039-0.7554,1.8276-3.2998,1.3184-5.021 C51.2754,49.3071,48.2305,47.5308,45.1953,45.9268z">
+				</path>
+				<path
+					d="M52.5127,33.0952c-4.8472,2.543-10.5723,2.4214-15.3154-0.3252 c-0.1523-0.0884-0.3257-0.1348-0.501-0.1348c-0.0293,0-0.0586,0.0015-0.0879,0.0039l-6.1338,0.542l2.0532-3.519 c0.2017-0.3462,0.1777-0.7793-0.0615-1.1006c-0.5132-0.6899-0.9668-1.4092-1.3486-2.1377 c-4.0571-7.7373-1.0645-17.3354,6.6719-21.396l-0.0005,0.0005c7.7378-4.0581,17.3354-1.0635,21.395,6.6719 C63.2417,19.438,60.2485,29.0356,52.5127,33.0952z">
+				</path>
+			</svg>
+			<p>Contact Us</p>
+		</a>
+
+		<div class="menu__border"></div>
+		<div class="svg-container">
+			<svg viewBox="0 0 202.9 45.5">
+				<clipPath id="menu" clipPathUnits="objectBoundingBox"
+					transform="scale(0.0049285362247413 0.021978021978022)">
+					<path d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+                  c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+                  c9.2,3.6,17.6,4.2,23.3,4H6.7z" />
+				</clipPath>
+			</svg>
+		</div>
+	</nav>
+
+	<aside class="floating_icons_container">
+		<div>
+			<a href="https://wa.me/9677066202" target="_blank">
+				<svg class="floating_icons" width="24px" height="24px" viewBox="0 0 24 24">
+					<path
+						d="M17.6 6.31999C16.8669 5.58141 15.9943 4.99596 15.033 4.59767C14.0716 4.19938 13.0406 3.99622 12 3.99999C10.6089 4.00135 9.24248 4.36819 8.03771 5.06377C6.83294 5.75935 5.83208 6.75926 5.13534 7.96335C4.4386 9.16745 4.07046 10.5335 4.06776 11.9246C4.06507 13.3158 4.42793 14.6832 5.12 15.89L4 20L8.2 18.9C9.35975 19.5452 10.6629 19.8891 11.99 19.9C14.0997 19.9001 16.124 19.0668 17.6222 17.5816C19.1205 16.0965 19.9715 14.0796 19.99 11.97C19.983 10.9173 19.7682 9.87634 19.3581 8.9068C18.948 7.93725 18.3505 7.05819 17.6 6.31999ZM12 18.53C10.8177 18.5308 9.65701 18.213 8.64 17.61L8.4 17.46L5.91 18.12L6.57 15.69L6.41 15.44C5.55925 14.0667 5.24174 12.429 5.51762 10.8372C5.7935 9.24545 6.64361 7.81015 7.9069 6.80322C9.1702 5.79628 10.7589 5.28765 12.3721 5.37368C13.9853 5.4597 15.511 6.13441 16.66 7.26999C17.916 8.49818 18.635 10.1735 18.66 11.93C18.6442 13.6859 17.9355 15.3645 16.6882 16.6006C15.441 17.8366 13.756 18.5301 12 18.53ZM15.61 13.59C15.41 13.49 14.44 13.01 14.26 12.95C14.08 12.89 13.94 12.85 13.81 13.05C13.6144 13.3181 13.404 13.5751 13.18 13.82C13.07 13.96 12.95 13.97 12.75 13.82C11.6097 13.3694 10.6597 12.5394 10.06 11.47C9.85 11.12 10.26 11.14 10.64 10.39C10.6681 10.3359 10.6827 10.2759 10.6827 10.215C10.6827 10.1541 10.6681 10.0941 10.64 10.04C10.64 9.93999 10.19 8.95999 10.03 8.56999C9.87 8.17999 9.71 8.23999 9.58 8.22999H9.19C9.08895 8.23154 8.9894 8.25465 8.898 8.29776C8.8066 8.34087 8.72546 8.403 8.66 8.47999C8.43562 8.69817 8.26061 8.96191 8.14676 9.25343C8.03291 9.54495 7.98287 9.85749 8 10.17C8.0627 10.9181 8.34443 11.6311 8.81 12.22C9.6622 13.4958 10.8301 14.5293 12.2 15.22C12.9185 15.6394 13.7535 15.8148 14.58 15.72C14.8552 15.6654 15.1159 15.5535 15.345 15.3915C15.5742 15.2296 15.7667 15.0212 15.91 14.78C16.0428 14.4856 16.0846 14.1583 16.03 13.84C15.94 13.74 15.81 13.69 15.61 13.59Z"
+						fill="#fff" />
+				</svg>
+			</a>
+			<a href="tel:+919677066202">
+				<svg class="floating_icons" viewBox="0 0 24 24">
+					<path
+						d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" />
+				</svg>
+			</a>
+		</div>
+	</aside>
+
+	<main>
+		<div id="home" class="carousel hero" duration="4000">
+			<div class="hero-prompt">
+				<p>Yuvin Interiors</p>
+				<a href="https://wa.me/9677066202" target="_blank">
+					<button>Get a Free Estimate</button>
+				</a>
+				
+			</div>
+			<ul tabindex="0">
+				<li id="c1_slide1">
+					<img src="./assets/images/hero-section/hero-section-320/hero-1.jpg" srcset="./assets/images/hero-section/hero-section-480/hero-1.jpg 480w,
+							./assets/images/hero-section/hero-section-720/hero-1.jpg 720w,
+							./assets/images/hero-section/hero-section-1080/hero-1.jpg 1080w,
+							./assets/images/hero-section/hero-section-1280/hero-1.jpg 1280w" alt="hero-image-1">
+				</li>
+				<li id="c1_slide2">
+					<img src="./assets/images/hero-section/hero-section-320/hero-2.jpg" srcset="./assets/images/hero-section/hero-section-480/hero-2.jpg 480w,
+							./assets/images/hero-section/hero-section-720/hero-2.jpg 720w,
+							./assets/images/hero-section/hero-section-1080/hero-2.jpg 1080w,
+							./assets/images/hero-section/hero-section-1280/hero-2.jpg 1280w" alt="hero-image-2">
+				</li>
+				<li id="c1_slide3">
+					<img src="./assets/images/hero-section/hero-section-320/hero-3.jpg" srcset="./assets/images/hero-section/hero-section-480/hero-3.jpg 480w,
+							./assets/images/hero-section/hero-section-720/hero-3.jpg 720w,
+							./assets/images/hero-section/hero-section-1080/hero-3.jpg 1080w,
+							./assets/images/hero-section/hero-section-1280/hero-3.jpg 1280w" alt="hero-image-3">
+				</li>
+			</ul>
+			<div class="hero_bottom_border">
+				<svg viewBox="0 0 800 600" preserveAspectRatio="none">
+					<path d="M 0 350 C 400 600 400 200 800 350 L 800 600 L 0 600 L 0 350 Z" fill="#fff"></path>
+				</svg>
+			</div>
+		</div>
+		<div class="padding-wrapper">
+			<div id="what-we-do" class="feature-overview">
+				<div class="heading">Professional</div>
+				<div class="sub-heading">Home Interior Design Company</div>
+				<div class="info-grid">
+					<div class="info-cell">
+						<div class="content">
+							<p class="heading">200+</p>
+							<p class="sub-heading">Projects</p>
+						</div>
+					</div>
+					<div class="info-cell">
+						<div class="content">
+							<p class="heading">Since</p>
+							<p class="sub-heading">2016</p>
+						</div>
+					</div>
+					<div class="info-cell">
+						<div class="content">
+							<p class="heading">~35 Days</p>
+							<p class="sub-heading">Completion</p>
+						</div>
+					</div>
+					<div class="info-cell">
+						<div class="content">
+							<p class="heading">10 year</p>
+							<p class="sub-heading">warranty</p>
+						</div>
+					</div>
+					<div class="info-cell">
+						<div class="content">
+							<p class="heading">Life-Long</p>
+							<p class="sub-heading">Service Support</p>
+						</div>
+					</div>
+					<div class="info-cell">
+						<div class="content">
+							<p class="heading">End to End</p>
+							<p class="sub-heading">Solutions</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="what-we-do">
+				<div class="heading">What we do</div>
+				<div class="content">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Perspiciatis iusto nemo praesentium. Blanditiis error
+						reprehenderit corporis consequatur, assumenda quo tenetur animi
+						expedita veniam obcaecati incidunt
+					</p>
+					<div class="scroller">
+						<p>Modular Kitchens</p>
+						<div class="carousel">
+							<ul>
+								<li>
+									<img src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/small-modular-kitchen-desktop-new.jpg"
+										srcset="./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/small-modular-kitchen-desktop-new.jpg 480w,
+													./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/small-modular-kitchen-desktop-new.jpg 720w"
+										alt="cat" />
+									<p>Small Modular Kitchen</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/l-shaped-modular-kitchen-d.jpg"
+										srcset="./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/l-shaped-modular-kitchen-d.jpg 480w,
+													./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/l-shaped-modular-kitchen-d.jpg 720w"
+										alt="cat" />
+									<p>L-Shaped Modular Kitchen</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/parallel-modular-kitchen-d.jpg"
+										srcset="./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/parallel-modular-kitchen-d.jpg 480w,
+													./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/parallel-modular-kitchen-d.jpg 720w"
+										alt="cat" />
+									<p>Parallel Modular Kitchen</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/u-shaped-modular-kitchen-d.jpg"
+										srcset="./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/u-shaped-modular-kitchen-d.jpg 480w,
+												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/u-shaped-modular-kitchen-d.jpg 720w"
+										alt="cat" />
+									<p>U-Shaped Modular Kitchen</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/mk-1.jpg"
+										srcset="./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/mk-1.jpg 480w,
+												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/mk-1.jpg 720w" alt="cat" />
+									<p>PVC Modular Kitchen</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/low-budget-kitchen-plans.jpg"
+										srcset="./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/low-budget-kitchen-plans.jpg 480w,
+												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/low-budget-kitchen-plans.jpg 720w"
+										alt="cat" />
+									<p>Low-Budget Modular Kitchen</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/white-kitchen-design-ideas.jpg"
+										srcset="./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/white-kitchen-design-ideas.jpg 480w,
+												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/white-kitchen-design-ideas.jpg 720w"
+										alt="cat" />
+									<p>Acrylic Modular Kitchen</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/modern-kitchen-interior-ideas.jpg"
+										srcset="./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/modern-kitchen-interior-ideas.jpg 480w,
+												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/modern-kitchen-interior-ideas.jpg 720w"
+										alt="cat" />
+									<p>Semi-Modular Kitchen</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/wooden-kitchen-ideas.jpg"
+										srcset="./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/wooden-kitchen-ideas.jpg 480w,
+												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/wooden-kitchen-ideas.jpg 720w"
+										alt="cat" />
+									<p>Wooden Modular Kitchen</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="scroller">
+						<p>Living/Hall Room </p>
+						<div class="carousel">
+							<ul>
+								<li>
+									<img src="./assets/images/what-we-do/living-rooms/living-rooms-320/modern-living-room-desktop.jpg"
+										srcset="./assets/images/what-we-do/living-rooms/living-rooms-480/modern-living-room-desktop.jpg 480w,
+													./assets/images/what-we-do/living-rooms/living-rooms-720/modern-living-room-desktop.jpg 720w" alt="cat" />
+									<p>Modern Living Room</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/living-rooms/living-rooms-320/indian-living-room-mobile.jpg"
+										srcset="./assets/images/what-we-do/living-rooms/living-rooms-480/indian-living-room-mobile.jpg 480w,
+												./assets/images/what-we-do/living-rooms/living-rooms-720/indian-living-room-mobile.jpg 720w" alt="cat" />
+									<p>Indian Living Room</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/living-rooms/living-rooms-320/small-living-room-desktop.jpg"
+										srcset="./assets/images/what-we-do/living-rooms/living-rooms-480/small-living-room-desktop.jpg 480w,
+												./assets/images/what-we-do/living-rooms/living-rooms-720/small-living-room-desktop.jpg 720w" alt="cat" />
+									<p>Small Living Room</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/living-rooms/living-rooms-320/white-and-red-sofa-designs.jpg"
+										srcset="./assets/images/what-we-do/living-rooms/living-rooms-480/white-and-red-sofa-designs.jpg 480w,
+												./assets/images/what-we-do/living-rooms/living-rooms-720/white-and-red-sofa-designs.jpg 720w" alt="cat" />
+									<p>Elegant Living Room</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/living-rooms/living-rooms-320/minimal-living-room-design.jpg"
+										srcset="./assets/images/what-we-do/living-rooms/living-rooms-480/minimal-living-room-design.jpg 480w,
+												./assets/images/what-we-do/living-rooms/living-rooms-720/minimal-living-room-design.jpg 720w" alt="cat" />
+									<p>Minimalist Living Room</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/living-rooms/living-rooms-320/contemporary-interior-designs.jpg"
+										srcset="./assets/images/what-we-do/living-rooms/living-rooms-480/contemporary-interior-designs.jpg 480w,
+												./assets/images/what-we-do/living-rooms/living-rooms-720/contemporary-interior-designs.jpg 720w"
+										alt="cat" />
+									<p>Contemporary Living Room</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/living-rooms/living-rooms-320/latest-living-room-designs.jpg"
+										srcset="./assets/images/what-we-do/living-rooms/living-rooms-480/latest-living-room-designs.jpg 480w,
+												./assets/images/what-we-do/living-rooms/living-rooms-720/latest-living-room-designs.jpg 720w" alt="cat" />
+									<p>Industrial Living Room</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/living-rooms/living-rooms-320/rustic-living-room-desktop.jpg"
+										srcset="./assets/images/what-we-do/living-rooms/living-rooms-480/rustic-living-room-desktop.jpg 480w,
+												./assets/images/what-we-do/living-rooms/living-rooms-720/rustic-living-room-desktop.jpg 720w" alt="cat" />
+									<p>Rustic Living Room</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="scroller">
+						<p>Bedroom Interiors</p>
+						<div class="carousel">
+							<ul>
+								<li>
+									<img src="./assets/images/what-we-do/bedrooms/bedrooms-320/modern-bedroom-design-d.jpg"
+										srcset="./assets/images/what-we-do/bedrooms/bedrooms-480/modern-bedroom-design-d.jpg 480w,
+												./assets/images/what-we-do/bedrooms/bedrooms-720/modern-bedroom-design-d.jpg 720w" alt="cat" />
+									<p>Modern Bedroom Design</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/bedrooms/bedrooms-320/master-bedroom-design-d.jpg"
+										srcset="./assets/images/what-we-do/bedrooms/bedrooms-480/master-bedroom-design-d.jpg 480w,
+												./assets/images/what-we-do/bedrooms/bedrooms-720/master-bedroom-design-d.jpg 720w" alt="cat" />
+									<p>Master Bedroom Design</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/bedrooms/bedrooms-320/small-bedroom-design.jpg"
+										srcset="./assets/images/what-we-do/bedrooms/bedrooms-480/small-bedroom-design.jpg 480w,
+												./assets/images/what-we-do/bedrooms/bedrooms-720/small-bedroom-design.jpg 720w" alt="cat" />
+									<p>Small Bedroom Design</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/bedrooms/bedrooms-320/simple-bedroom-design-d.jpg"
+										srcset="./assets/images/what-we-do/bedrooms/bedrooms-480/simple-bedroom-design-d.jpg 480w,
+												./assets/images/what-we-do/bedrooms/bedrooms-720/simple-bedroom-design-d.jpg 720w" alt="cat" />
+									<p>Simple Bedroom Design</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/bedrooms/bedrooms-320/luxury-bedroom-design-d.jpg"
+										srcset="./assets/images/what-we-do/bedrooms/bedrooms-480/luxury-bedroom-design-d.jpg 480w,
+												./assets/images/what-we-do/bedrooms/bedrooms-720/luxury-bedroom-design-d.jpg 720w" alt="cat" />
+									<p>Luxury Bedroom Design</p>
+								</li>
+								<li>
+									<img src="./assets/images/what-we-do/bedrooms/bedrooms-320/childrens-bedroom-design-d.jpg"
+										srcset="./assets/images/what-we-do/bedrooms/bedrooms-480/childrens-bedroom-design-d.jpg 480w,
+												./assets/images/what-we-do/bedrooms/bedrooms-720/childrens-bedroom-design-d.jpg 720w" alt="cat" />
+									<p>Children's Bedroom Design</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sub-heading">and more...</div>
+					<div class="many-more-image-grid">
+						<div class="grid-item">
+							<img src="./assets/images/what-we-do/misc/misc-320/tiling.jpg" srcset="./assets/images/what-we-do/misc/misc-480/tiling.jpg 480w,
+										./assets/images/what-we-do/misc/misc-720/tiling.jpg 720w,
+										./assets/images/what-we-do/misc/misc-1080/tiling.jpg 1080w" alt="tiling" />
+							<p>Tiling</p>
+						</div>
+						<div class="grid-item span-2-2">
+							<img src="./assets/images/what-we-do/misc/misc-320/office-space.jpg" srcset="./assets/images/what-we-do/misc/misc-480/office-space.jpg 480w,
+										./assets/images/what-we-do/misc/misc-720/office-space.jpg 720w,
+										./assets/images/what-we-do/misc/misc-1080/office-space.jpg 1080w" alt="office-space" />
+							<p>Commercial Space Office Setup</p>
+						</div>
+						<div class="grid-item">
+							<img src="./assets/images/what-we-do/misc/misc-320/vanity-unit.jpg" srcset="./assets/images/what-we-do/misc/misc-480/vanity-unit.jpg 480w,
+										./assets/images/what-we-do/misc/misc-720/vanity-unit.jpg 720w,
+										./assets/images/what-we-do/misc/misc-1080/vanity-unit.jpg 1080w" alt="vanity-unit" />
+							<p>Vanity Unit</p>
+						</div>
+						<div class="grid-item span-2-1">
+							<img src="./assets/images/what-we-do/misc/misc-320/false-ceiling.jpg" srcset="./assets/images/what-we-do/misc/misc-480/false-ceiling.jpg 480w,
+										./assets/images/what-we-do/misc/misc-720/false-ceiling.jpg 720w,
+										./assets/images/what-we-do/misc/misc-1080/false-ceiling.jpg 1080w" alt="false-ceiling" />
+							<p>False Ceilings</p>
+						</div>
+
+						<div class="grid-item span-1-2">
+							<img src="./assets/images/what-we-do/misc/misc-320/pooja-space.jpg" srcset="./assets/images/what-we-do/misc/misc-480/pooja-space.jpg 480w,
+										./assets/images/what-we-do/misc/misc-720/pooja-space.jpg 720w,
+										./assets/images/what-we-do/misc/misc-1080/pooja-space.jpg 1080w" alt="pooja-space" />
+							<p>Pooja Space</p>
+						</div>
+						<div class="grid-item span-2-2">
+							<img src="./assets/images/what-we-do/misc/misc-320/wall-paintings.jpg" srcset="./assets/images/what-we-do/misc/misc-480/wall-paintings.jpg 480w,
+										./assets/images/what-we-do/misc/misc-720/wall-paintings.jpg 720w,
+										./assets/images/what-we-do/misc/misc-1080/wall-paintings.jpg 1080w" alt="wall-paintings" />
+							<p>Wall Paintings</p>
+						</div>
+						<div class="grid-item">
+							<img src="./assets/images/what-we-do/misc/misc-320/tv-unit.jpg" srcset="./assets/images/what-we-do/misc/misc-480/tv-unit.jpg 480w,
+										./assets/images/what-we-do/misc/misc-720/tv-unit.jpg 720w,
+										./assets/images/what-we-do/misc/misc-1080/tv-unit.jpg 1080w" alt="tv-unit" />
+							<p>Tv Unit</p>
+						</div>
+						<div class="grid-item">
+							<img src="./assets/images/what-we-do/misc/misc-320/utility-storage.jpg" srcset="./assets/images/what-we-do/misc/misc-480/utility-storage.jpg 480w,
+										./assets/images/what-we-do/misc/misc-720/utility-storage.jpg 720w,
+										./assets/images/what-we-do/misc/misc-1080/utility-storage.jpg 1080w" alt="utility-storage" />
+							<p>Utility Storage</p>
+						</div>
+						<div class="grid-item">
+							<img src="./assets/images/what-we-do/misc/misc-320/electrical-work.jpg" srcset="./assets/images/what-we-do/misc/misc-480/electrical-work.jpg 480w,
+										./assets/images/what-we-do/misc/misc-720/electrical-work.jpg 720w,
+										./assets/images/what-we-do/misc/misc-1080/electrical-work.jpg 1080w" alt="electrical-work" />
+							<p>Electrical Works</p>
+						</div>
+						<div class="grid-item">
+							<img src="./assets/images/what-we-do/misc/misc-320/plumbing-repair-service.jpg" srcset="./assets/images/what-we-do/misc/misc-480/plumbing-repair-service.jpg 480w,
+										./assets/images/what-we-do/misc/misc-720/plumbing-repair-service.jpg 720w,
+										./assets/images/what-we-do/misc/misc-1080/plumbing-repair-service.jpg 1080w" alt="plumbing-repair-service" />
+							<p>Plumbing Works</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div id="how-it-works" class="how-it-works">
+				<h1>How It Works</h1>
+				<ul>
+					<li style="--accent-color:#1d1d27">
+						<div class="date">Understanding your needs</div>
+						<img src="./assets/images/how-it-works/how-it-works-320/understanding-requirements.jpg" srcset="./assets/images/how-it-works/how-it-works-480/understanding-requirements.jpg 480w,
+									./assets/images/how-it-works/how-it-works-720/understanding-requirements.jpg 720w,
+									./assets/images/how-it-works/how-it-works-1080/understanding-requirements.jpg 1080w"
+							alt="understanding-requirements" class="img" />
+					</li>
+					<li style="--accent-color:#1d1d27">
+						<div class="date">Exploring the possibilities</div>
+						<img src="./assets/images/how-it-works/how-it-works-320/exploring-possibilities.jpg" srcset="./assets/images/how-it-works/how-it-works-480/exploring-possibilities.jpg 480w,
+									./assets/images/how-it-works/how-it-works-720/exploring-possibilities.jpg 720w,
+									./assets/images/how-it-works/how-it-works-1080/exploring-possibilities.jpg 1080w"
+							alt="exploring-possibilities" class="img" />
+					</li>
+					<li style="--accent-color:#1d1d27">
+						<div class="date">Planning & Cost Optimization</div>
+						<img src="./assets/images/how-it-works/how-it-works-320/cost-planning.jpg" srcset="./assets/images/how-it-works/how-it-works-480/cost-planning.jpg 480w,
+									./assets/images/how-it-works/how-it-works-720/cost-planning.jpg 720w,
+									./assets/images/how-it-works/how-it-works-1080/cost-planning.jpg 1080w" alt="cost-planning" class="img" />
+					</li>
+					<li style="--accent-color:#1d1d27">
+						<div class="date">Project Handover & Warranty</div>
+						<img src="./assets/images/how-it-works/how-it-works-320/project-handover.jpg" srcset="./assets/images/how-it-works/how-it-works-480/project-handover.jpg 480w,
+									./assets/images/how-it-works/how-it-works-720/project-handover.jpg 720w,
+									./assets/images/how-it-works/how-it-works-1080/project-handover.jpg 1080w" alt="project-handover.jpg"
+							class="img" />
+					</li>
+				</ul>
+			</div>
+			<div id="reviews" class="reviews">
+				<div class="heading">Reviews</div>
+				<div class="carousel">
+					<ul>
+						<li>
+							<img src="https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
+								alt="cat" />
+							<p class="client-name">Client - Geetha</p>
+							<p class="client-review">
+								Exceptional designs, delivered on-time , highly recommend !!!
+							</p>
+						</li>
+						<li>
+							<img src="https://images.pexels.com/photos/4492170/pexels-photo-4492170.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
+								alt="cat2" />
+							<p class="client-name">Client - Geetha</p>
+							<p class="client-review">
+								beautiful work, professional team. Exceeded my expectations!							
+							</p>
+						</li>
+						<li>
+							<img src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
+								alt="cat3" />
+							<p class="client-name">Client - Geetha</p>
+							<p class="client-review">
+								Yuvin Interiors transformed our space beautifully. Thank you!
+							</p>
+						</li>
+						
+				</div>
+			</div>
+			<div id="contact-us" class="contact-us">
+				<div class="heading">Come by our Office</div>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1156.1671172175852!2d80.17862392288133!3d12.916259789311425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1697234548423!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div>
+					<p class="address-heading">Address</p>
+					<p class="address">8/456, gandhi street, vijayanagaram, medavakkam, chennai - 600100</p>
+				
+				</div>
+				<div class="connect-prompt">
+					<ul>
+						<li>
+							<div class="date">Chat With Us</div>
+							<a href="https://wa.me/9677066202" target="_blank">
+								<svg class="floating_icons" viewBox="0 0 24 24">
+									<path
+										d="M17.6 6.31999C16.8669 5.58141 15.9943 4.99596 15.033 4.59767C14.0716 4.19938 13.0406 3.99622 12 3.99999C10.6089 4.00135 9.24248 4.36819 8.03771 5.06377C6.83294 5.75935 5.83208 6.75926 5.13534 7.96335C4.4386 9.16745 4.07046 10.5335 4.06776 11.9246C4.06507 13.3158 4.42793 14.6832 5.12 15.89L4 20L8.2 18.9C9.35975 19.5452 10.6629 19.8891 11.99 19.9C14.0997 19.9001 16.124 19.0668 17.6222 17.5816C19.1205 16.0965 19.9715 14.0796 19.99 11.97C19.983 10.9173 19.7682 9.87634 19.3581 8.9068C18.948 7.93725 18.3505 7.05819 17.6 6.31999ZM12 18.53C10.8177 18.5308 9.65701 18.213 8.64 17.61L8.4 17.46L5.91 18.12L6.57 15.69L6.41 15.44C5.55925 14.0667 5.24174 12.429 5.51762 10.8372C5.7935 9.24545 6.64361 7.81015 7.9069 6.80322C9.1702 5.79628 10.7589 5.28765 12.3721 5.37368C13.9853 5.4597 15.511 6.13441 16.66 7.26999C17.916 8.49818 18.635 10.1735 18.66 11.93C18.6442 13.6859 17.9355 15.3645 16.6882 16.6006C15.441 17.8366 13.756 18.5301 12 18.53ZM15.61 13.59C15.41 13.49 14.44 13.01 14.26 12.95C14.08 12.89 13.94 12.85 13.81 13.05C13.6144 13.3181 13.404 13.5751 13.18 13.82C13.07 13.96 12.95 13.97 12.75 13.82C11.6097 13.3694 10.6597 12.5394 10.06 11.47C9.85 11.12 10.26 11.14 10.64 10.39C10.6681 10.3359 10.6827 10.2759 10.6827 10.215C10.6827 10.1541 10.6681 10.0941 10.64 10.04C10.64 9.93999 10.19 8.95999 10.03 8.56999C9.87 8.17999 9.71 8.23999 9.58 8.22999H9.19C9.08895 8.23154 8.9894 8.25465 8.898 8.29776C8.8066 8.34087 8.72546 8.403 8.66 8.47999C8.43562 8.69817 8.26061 8.96191 8.14676 9.25343C8.03291 9.54495 7.98287 9.85749 8 10.17C8.0627 10.9181 8.34443 11.6311 8.81 12.22C9.6622 13.4958 10.8301 14.5293 12.2 15.22C12.9185 15.6394 13.7535 15.8148 14.58 15.72C14.8552 15.6654 15.1159 15.5535 15.345 15.3915C15.5742 15.2296 15.7667 15.0212 15.91 14.78C16.0428 14.4856 16.0846 14.1583 16.03 13.84C15.94 13.74 15.81 13.69 15.61 13.59Z"
+										fill="#fff" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<div class="date">Call Us Now</div>
+							<a href="tel:+919677066202">
+								<svg class="floating_icons" viewBox="0 0 24 24">
+									<path
+										d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="social-media">
+				<div class="heading">Follow us on social media</div>
+				<div class="social-media-grid">
+					<svg fill="#6d9eee" height="64px" width="64px"xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" stroke="#6d9eee">
+						<path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M215.2,361.2c0.1,2.2,0.1,4.5,0.1,6.8c0,69.5-52.9,149.7-149.7,149.7c-29.7,0-57.4-8.7-80.6-23.6c4.1,0.5,8.3,0.7,12.6,0.7 c24.6,0,47.3-8.4,65.3-22.5c-23-0.4-42.5-15.6-49.1-36.5c3.2,0.6,6.5,0.9,9.9,0.9c4.8,0,9.5-0.6,13.9-1.9 C13.5,430-4.6,408.7-4.6,383.2v-0.6c7.1,3.9,15.2,6.3,23.8,6.6c-14.1-9.4-23.4-25.6-23.4-43.8c0-9.6,2.6-18.7,7.1-26.5 c26,31.9,64.7,52.8,108.4,55c-0.9-3.8-1.4-7.8-1.4-12c0-29,23.6-52.6,52.6-52.6c15.1,0,28.8,6.4,38.4,16.6 c12-2.4,23.2-6.7,33.4-12.8c-3.9,12.3-12.3,22.6-23.1,29.1c10.6-1.3,20.8-4.1,30.2-8.3C234.4,344.5,225.5,353.7,215.2,361.2z"/>
+					</svg>
+					<svg fill="#ff0000" height="64px" width="64px" viewBox="-143 145 512 512" xml:space="preserve" stroke="#ff0000">
+						<g> 
+							<polygon points="78.9,450.3 162.7,401.1 78.9,351.9 "/>
+							<path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M241,446.8L241,446.8c0,44.1-44.1,44.1-44.1,44.1H29.1c-44.1,0-44.1-44.1-44.1-44.1v-91.5c0-44.1,44.1-44.1,44.1-44.1h167.8 c44.1,0,44.1,44.1,44.1,44.1V446.8z"/> 
+						</g> 
+					</svg>
+					<svg width="64px" height="64px" viewBox="0 0 48 48">
     
+						<g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g transform="translate(-200.000000, -160.000000)" fill="#4460A0">
+								<path d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"></path>
+							</g>
+						</g>
+					</svg>
+					<svg width="64px" height="64px" viewBox="0 0 32 32">
+						<rect x="0" y="0" width="32" height="32" rx="6" fill="url(#paint0_radial_87_7153)"/>
+						<rect x="0" y="0" width="32" height="32" rx="6" fill="url(#paint1_radial_87_7153)"/>
+						<rect x="0" y="0" width="32" height="32" rx="6" fill="url(#paint2_radial_87_7153)"/>
+						<path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white"/>
+						<defs>
+						<radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+						<stop stop-color="#B13589"/>
+						<stop offset="0.79309" stop-color="#C62F94"/>
+						<stop offset="1" stop-color="#8A3AC8"/>
+						</radialGradient>
+						<radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+						<stop stop-color="#E0E8B7"/>
+						<stop offset="0.444662" stop-color="#FB8A2E"/>
+						<stop offset="0.71474" stop-color="#E2425C"/>
+						<stop offset="1" stop-color="#E2425C" stop-opacity="0"/>
+						</radialGradient>
+						<radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+						<stop offset="0.156701" stop-color="#406ADC"/>
+						<stop offset="0.467799" stop-color="#6A45BE"/>
+						<stop offset="1" stop-color="#6A45BE" stop-opacity="0"/>
+						</radialGradient>
+						</defs>
+						</svg>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="footer">
+			Yuvin Interiors ©️
+		</div>
+		<div style="padding-bottom: 100px; background-color: #1d1d27;"></div>
+	</main>
 </body>
+
 </html>
