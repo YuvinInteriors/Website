@@ -6,6 +6,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1" />
 		<title>Yuvin Interiors</title>
+		<link rel="icon" type="image/x-icon" href="./assets/images/Asset 2 - Copy.svg">
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com" />
@@ -13,19 +14,28 @@
 			rel="preconnect"
 			href="https://fonts.gstatic.com"
 			crossorigin />
+
 		<link
 			href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito&family=Marck+Script&family=Tangerine:wght@700&display=swap"
 			rel="stylesheet" />
 		<link
 			rel="stylesheet"
-			href="styles.css" />
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<link
+			rel="stylesheet"
+			href="output.css" />
 		<script
 			defer
-			src="./output/main.js"></script>
+			src="./main.js"></script>
 	</head>
 
 	<body>
-		<nav class="menu">
+		<nav class="bottom-menu">
 			<a
 				href="#home"
 				class="menu__item active">
@@ -60,7 +70,7 @@
 					<path
 						d=" M22.926,26.054l-1.977,0.729c-0.221,0.082-0.391,0.263-0.455,0.489c-0.13,0.454-0.312,0.896-0.54,1.311 c-0.114,0.205-0.122,0.453-0.023,0.667l0.883,1.909c-0.23,0.259-0.478,0.505-0.737,0.735l-1.91-0.886 c-0.212-0.098-0.46-0.088-0.666,0.023c-0.42,0.232-0.862,0.415-1.311,0.548c-0.226,0.063-0.407,0.232-0.488,0.453l-0.722,1.969 c-0.354,0.023-0.689,0.023-1.042,0l-0.727-1.973c-0.082-0.221-0.263-0.39-0.488-0.455c-0.464-0.133-0.905-0.317-1.309-0.542 c-0.207-0.115-0.455-0.125-0.669-0.025L8.837,31.89c-0.262-0.23-0.508-0.479-0.735-0.733l0.883-1.913 c0.099-0.214,0.089-0.461-0.025-0.667c-0.23-0.417-0.413-0.856-0.542-1.308c-0.065-0.226-0.234-0.41-0.456-0.49L5.99,26.054 c-0.02-0.346-0.02-0.695,0-1.039l1.976-0.727c0.22-0.08,0.388-0.263,0.455-0.487c0.133-0.463,0.315-0.903,0.541-1.311 c0.114-0.207,0.124-0.455,0.025-0.668l-0.883-1.906c0.228-0.257,0.475-0.503,0.737-0.737l1.91,0.884 c0.213,0.1,0.461,0.09,0.667-0.023c0.418-0.232,0.858-0.415,1.307-0.543c0.227-0.065,0.409-0.234,0.49-0.456l0.723-1.973 c0.346-0.021,0.696-0.021,1.042,0l0.727,1.977c0.081,0.224,0.263,0.393,0.489,0.456c0.458,0.132,0.899,0.313,1.309,0.539 c0.205,0.113,0.453,0.123,0.667,0.023l1.906-0.884c0.261,0.23,0.507,0.477,0.737,0.737l-0.883,1.912 c-0.099,0.213-0.09,0.461,0.024,0.666c0.229,0.415,0.412,0.855,0.543,1.311c0.064,0.225,0.234,0.407,0.455,0.487l1.973,0.723 C22.945,25.36,22.945,25.71,22.926,26.054zM14.458,21.109c-2.441,0-4.429,1.986-4.429,4.43c0,2.438,1.987,4.422,4.429,4.422c2.44,0,4.426-1.984,4.426-4.422 C18.884,23.096,16.898,21.109,14.458,21.109zM32.486,12.089 c0.043,0.386,0.039,0.773-0.008,1.15c-0.03,0.234,0.057,0.469,0.228,0.63l1.226,1.148c-0.081,0.222-0.172,0.435-0.273,0.64 l-1.675-0.082c-0.236-0.01-0.461,0.09-0.608,0.272c-0.246,0.304-0.525,0.578-0.828,0.816c-0.185,0.145-0.289,0.369-0.281,0.605 l0.057,1.671c-0.21,0.098-0.427,0.187-0.646,0.264l-1.129-1.245c-0.141-0.153-0.34-0.24-0.545-0.24c-0.027,0-0.055,0-0.08,0.004 c-0.393,0.042-0.781,0.038-1.154-0.008c-0.232-0.03-0.469,0.056-0.629,0.229l-1.146,1.224c-0.225-0.082-0.438-0.175-0.643-0.272 l0.081-1.677c0.012-0.236-0.091-0.461-0.273-0.609c-0.303-0.246-0.575-0.522-0.81-0.822c-0.145-0.188-0.37-0.292-0.607-0.286 l-1.674,0.058c-0.047-0.104-0.094-0.209-0.14-0.322c-0.045-0.109-0.085-0.218-0.123-0.323l1.243-1.129 c0.174-0.158,0.264-0.391,0.237-0.623c-0.04-0.38-0.036-0.772,0.009-1.162c0.028-0.232-0.057-0.465-0.229-0.626l-1.225-1.145 c0.08-0.22,0.17-0.433,0.272-0.641l1.68,0.079c0.235,0.012,0.46-0.09,0.608-0.272c0.24-0.296,0.52-0.572,0.826-0.816 c0.184-0.145,0.287-0.367,0.279-0.602l-0.055-1.675c0.211-0.097,0.428-0.185,0.646-0.262l1.127,1.245 c0.159,0.173,0.39,0.261,0.622,0.238c0.384-0.041,0.776-0.039,1.164,0.008c0.232,0.026,0.466-0.058,0.624-0.23l1.144-1.222 c0.219,0.08,0.435,0.173,0.646,0.272l-0.08,1.675c-0.012,0.234,0.088,0.459,0.268,0.607c0.311,0.251,0.582,0.532,0.814,0.828 c0.146,0.184,0.369,0.288,0.605,0.282l1.678-0.056c0.096,0.209,0.184,0.424,0.261,0.647l-1.245,1.129 C32.551,11.622,32.462,11.854,32.486,12.089zM27.383,9.585c-0.393,0-0.777,0.075-1.143,0.224c-1.553,0.628-2.303,2.404-1.674,3.963 c0.469,1.152,1.576,1.896,2.822,1.896l0,0c0.39,0,0.771-0.074,1.133-0.221c0.756-0.306,1.346-0.886,1.662-1.635 c0.318-0.749,0.326-1.573,0.021-2.326C29.738,10.331,28.627,9.585,27.383,9.585z " />
 				</svg>
-				<p>How it works</p>
+				<p>How We Work</p>
 			</a>
 
 			<a
@@ -113,6 +123,53 @@
 			</div>
 		</nav>
 
+		<nav class="top-menu">
+			<div class="logo">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					id="Layer_2"
+					data-name="Layer 2"
+					viewBox="0 0 624.83 606.06">
+					<g
+						id="Layer_1-2"
+						data-name="Layer 1">
+						<path
+							class="cls-1"
+							d="m522.42,144.28s-132.02-37.5-199.53,92.78c0,0,86.83,8.58,174.31-32.64,0,0-10.64-55.13,25.22-60.15Zm-383.26,73.31c-13.19-6.51-25.66-13.26-37.31-20.03C43.97,163.94,6.24,129.92,0,123.06c26.33,47.41,58.8,84.43,93.8,113.32,12.85,10.61,26.04,20.13,39.39,28.65,128.13,81.85,271.17,73.17,271.17,73.17-4.09,54.91-38.36,110.16-77.19,156.09-10.69,12.64-21.72,24.58-32.56,35.61-45.14,45.93-86.99,76.15-86.99,76.15,52.1-11.59,96.47-36.31,134.02-67.85,15.17-12.74,29.22-26.6,42.21-41.16,101.5-113.68,121.62-264.35,121.73-264.79-142.51,75.48-266.73,34.53-366.43-14.67Zm-6.63,86.21c-15.77-9.61-30.21-19.4-43.06-28.74-40.76-29.64-65.46-54.72-65.46-54.72,21.22,34.66,44.37,62.99,67.83,86.14,17.74,17.51,35.65,32.06,53.03,44.13,74.41,51.69,139.17,58.18,139.17,58.18-4.54,28.03-10.83,51.14-17.34,69.71-5.64,16.09-11.45,28.76-16.44,38.23-7.81,14.82-13.62,21.81-13.62,21.81,7.96-5.64,15.47-11.7,22.55-18.06,11.6-10.41,22.03-21.63,31.36-33.06,45.74-56.06,65.02-117.55,65.02-117.55-83.62,4.42-162.95-29.45-223.04-66.06Zm43.79,103.39c-21.64-11.16-46.62-26.83-72.07-48.56,21.22,61.11,63.85,112.2,118.91,144.29,5-11.97,10.78-26.51,15.07-39.41-23.95-14.83-44.94-33.96-61.91-56.32Zm213.47,129.18c14.03-14.58,28.04-31.26,41.61-50.34,89.54-31.32,153.77-116.54,153.77-216.77,0-126.81-102.8-229.6-229.6-229.6-97.92,0-181.51,61.31-214.52,147.62-11.5-5.87-23.16-12.35-34.95-19.49C146.16,69.38,242.75,0,355.56,0c148.71,0,269.27,120.55,269.27,269.27,0,137.12-102.49,250.29-235.04,267.11Z" />
+					</g>
+				</svg>
+				<p>Yuvin Interiors</p>
+			</div>
+
+			<div class="nav-items">
+				<a
+					href="#home"
+					class="menu__item active">
+					<p>Home</p>
+				</a>
+				<a
+					href="#what-we-do"
+					class="menu__item">
+					<p>What We Do</p>
+				</a>
+				<a
+					href="#how-it-works"
+					class="menu__item">
+					<p>How We Work</p>
+				</a>
+				<a
+					href="#reviews"
+					class="menu__item">
+					<p>Reviews</p>
+				</a>
+				<a
+					href="#contact-us"
+					class="menu__item">
+					<p>Contact Us</p>
+				</a>
+			</div>
+		</nav>
+
 		<aside class="floating_icons_container">
 			<div>
 				<a
@@ -140,65 +197,80 @@
 		</aside>
 
 		<main>
-			<div class="wrapper">
+			<div class="hero-section">
 				<div
 					id="home"
-					class="carousel hero"
-					duration="4000">
+					class="hero-overlay">
+					<div class="gradient-overlay"></div>
 					<div class="hero-prompt">
 						<p class="logo-name">Yuvin Interiors</p>
 						<a
 							href="https://wa.me/9677066202"
 							target="_blank">
-							<button>Get a Free Estimate</button>
+							<button class="call-to-action-btn">
+								<p>Get a free Estimate</p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#ffffff"
+									width="24px"
+									height="24px"
+									viewBox="0 0 24 24"
+									id="right-arrow"
+								
+									data-name="Flat Line"
+									class="icon flat-line">
+									<line
+										id="primary"
+										x1="3"
+										y1="12"
+										x2="21"
+										y2="12"
+										style="
+											fill: none;
+											stroke: rgb(255, 255, 255);
+											stroke-linecap: round;
+											stroke-linejoin: round;
+											stroke-width: 2;
+										" />
+									<polyline
+										id="primary-2"
+										data-name="primary"
+										points="18 15 21 12 18 9"
+										style="
+											fill: none;
+											stroke: rgb(255, 255, 255);
+											stroke-linecap: round;
+											stroke-linejoin: round;
+											stroke-width: 2;
+										" />
+								</svg>
+							</button>
 						</a>
-						
-						
 					</div>
-					<ul tabindex="0">
-						<li id="c1_slide1">
-							<!-- <img
-								src="./assets/images/hero-section/hero-section-320/hero- (1).jpg"
-								srcset="
-									./assets/images/hero-section/hero-section-480/hero- (1).jpg   480w,
-									./assets/images/hero-section/hero-section-720/hero- (1).jpg   720w,
-									./assets/images/hero-section/hero-section-1080/hero- (1).jpg 1080w,
-									./assets/images/hero-section/hero-section-1280/hero- (1).jpg 1280w
-								"
-								alt="hero-image-1" /> -->
-							<img src="./assets/images/hero-section/AdobeStock (1).jpg" />
-						</li>
-						<li id="c1_slide2">
-							<!-- <img
-								src="./assets/images/hero-section/hero-section-320/hero- (2).jpg"
-								srcset="
-									./assets/images/hero-section/hero-section-480/hero- (2).jpg   480w,
-									./assets/images/hero-section/hero-section-720/hero- (2).jpg   720w,
-									./assets/images/hero-section/hero-section-1080/hero- (2).jpg 1080w,
-									./assets/images/hero-section/hero-section-1280/hero- (2).jpg 1280w
-								"
-								alt="hero-image-2" /> -->
-							<img
-								src="./assets/images/hero-section/kitchen-1(1).jpg"
-								alt="" />
-						</li>
-						<li id="c1_slide3">
-							<!-- <img
-								src="./assets/images/hero-section/hero-section-320/hero- (3).jpg"
-								srcset="
-									./assets/images/hero-section/hero-section-480/hero- (3).jpg   480w,
-									./assets/images/hero-section/hero-section-720/hero- (3).jpg   720w,
-									./assets/images/hero-section/hero-section-1080/hero- (3).jpg 1080w,
-									./assets/images/hero-section/hero-section-1280/hero- (3).jpg 1280w
-								"
-								alt="hero-image-3" /> -->
-							<img
-								src="./assets/images/hero-section/AdobeStock-1 (1).jpg"
-								alt="asd" />
-						</li>
-					</ul>
 				</div>
-				<div class="bottom-border">
+				<div class="hero-carousel">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<img
+								src="./assets/images/hero-section/hero-1.jpg"
+								alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="./assets/images/hero-section/hero-2.jpg"
+								alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="./assets/images/hero-section/hero-3.jpg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="hero-bottom-border">
 					<svg
 						viewBox="0 0 800 90"
 						preserveAspectRatio="none">
@@ -215,41 +287,44 @@
 				<div class="padding-wrapper">
 					<div class="heading">Professional</div>
 					<div class="sub-heading">Home Interior Design Company</div>
-					<div class="info-grid">
-						<div class="info-cell">
-							<div class="content">
-								<p class="heading">200+</p>
-								<p class="sub-heading">Projects</p>
+
+					<div class="info-grid-wrapper">
+						<div class="info-grid">
+							<div class="info-cell">
+								<div class="content">
+									<p class="heading">200+</p>
+									<p class="sub-heading">Projects</p>
+								</div>
 							</div>
-						</div>
-						<div class="info-cell">
-							<div class="content">
-								<p class="heading">Since</p>
-								<p class="sub-heading">2016</p>
+							<div class="info-cell">
+								<div class="content">
+									<p class="heading">Since</p>
+									<p class="sub-heading">2016</p>
+								</div>
 							</div>
-						</div>
-						<div class="info-cell">
-							<div class="content">
-								<p class="heading">~35 Days</p>
-								<p class="sub-heading">Completion</p>
+							<div class="info-cell">
+								<div class="content">
+									<p class="heading">~35 Days</p>
+									<p class="sub-heading">Completion</p>
+								</div>
 							</div>
-						</div>
-						<div class="info-cell">
-							<div class="content">
-								<p class="heading">10 year</p>
-								<p class="sub-heading">warranty</p>
+							<div class="info-cell">
+								<div class="content">
+									<p class="heading">10 year</p>
+									<p class="sub-heading">warranty</p>
+								</div>
 							</div>
-						</div>
-						<div class="info-cell">
-							<div class="content">
-								<p class="heading">Life-Long</p>
-								<p class="sub-heading">Service Support</p>
+							<div class="info-cell">
+								<div class="content">
+									<p class="heading">Life-Long</p>
+									<p class="sub-heading">Service Support</p>
+								</div>
 							</div>
-						</div>
-						<div class="info-cell">
-							<div class="content">
-								<p class="heading">End to End</p>
-								<p class="sub-heading">Solutions</p>
+							<div class="info-cell">
+								<div class="content">
+									<p class="heading">End to End</p>
+									<p class="sub-heading">Solutions</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -274,371 +349,89 @@
 							reflect your personality, embracing budget-friendly luxury and
 							tailored designs!
 						</p>
-						<div class="scroller">
-							<p>Modular Kitchens</p>
-							<div class="carousel">
-								<ul>
-									<li>
-										<img
-											src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/small-modular-kitchen-desktop-new.jpg"
-											srcset="
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/small-modular-kitchen-desktop-new.jpg 480w,
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/small-modular-kitchen-desktop-new.jpg 720w
-											"
-											alt="cat" />
-										<p>Small Modular Kitchen</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/l-shaped-modular-kitchen-d.jpg"
-											srcset="
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/l-shaped-modular-kitchen-d.jpg 480w,
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/l-shaped-modular-kitchen-d.jpg 720w
-											"
-											alt="cat" />
-										<p>L-Shaped Modular Kitchen</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/parallel-modular-kitchen-d.jpg"
-											srcset="
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/parallel-modular-kitchen-d.jpg 480w,
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/parallel-modular-kitchen-d.jpg 720w
-											"
-											alt="cat" />
-										<p>Parallel Modular Kitchen</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/u-shaped-modular-kitchen-d.jpg"
-											srcset="
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/u-shaped-modular-kitchen-d.jpg 480w,
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/u-shaped-modular-kitchen-d.jpg 720w
-											"
-											alt="cat" />
-										<p>U-Shaped Modular Kitchen</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/mk-1.jpg"
-											srcset="
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/mk-1.jpg 480w,
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/mk-1.jpg 720w
-											"
-											alt="cat" />
-										<p>PVC Modular Kitchen</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/low-budget-kitchen-plans.jpg"
-											srcset="
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/low-budget-kitchen-plans.jpg 480w,
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/low-budget-kitchen-plans.jpg 720w
-											"
-											alt="cat" />
-										<p>Low-Budget Modular Kitchen</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/white-kitchen-design-ideas.jpg"
-											srcset="
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/white-kitchen-design-ideas.jpg 480w,
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/white-kitchen-design-ideas.jpg 720w
-											"
-											alt="cat" />
-										<p>Acrylic Modular Kitchen</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/modern-kitchen-interior-ideas.jpg"
-											srcset="
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/modern-kitchen-interior-ideas.jpg 480w,
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/modern-kitchen-interior-ideas.jpg 720w
-											"
-											alt="cat" />
-										<p>Semi-Modular Kitchen</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/modular-kitchens/modular-kitchens-320/wooden-kitchen-ideas.jpg"
-											srcset="
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-480/wooden-kitchen-ideas.jpg 480w,
-												./assets/images/what-we-do/modular-kitchens/modular-kitchens-720/wooden-kitchen-ideas.jpg 720w
-											"
-											alt="cat" />
-										<p>Wooden Modular Kitchen</p>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="scroller">
-							<p>Living/Hall Room</p>
-							<div class="carousel">
-								<ul>
-									<li>
-										<img
-											src="./assets/images/what-we-do/living-rooms/living-rooms-320/modern-living-room-desktop.jpg"
-											srcset="
-												./assets/images/what-we-do/living-rooms/living-rooms-480/modern-living-room-desktop.jpg 480w,
-												./assets/images/what-we-do/living-rooms/living-rooms-720/modern-living-room-desktop.jpg 720w
-											"
-											alt="cat" />
-										<p>Modern Living Room</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/living-rooms/living-rooms-320/indian-living-room-mobile.jpg"
-											srcset="
-												./assets/images/what-we-do/living-rooms/living-rooms-480/indian-living-room-mobile.jpg 480w,
-												./assets/images/what-we-do/living-rooms/living-rooms-720/indian-living-room-mobile.jpg 720w
-											"
-											alt="cat" />
-										<p>Indian Living Room</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/living-rooms/living-rooms-320/small-living-room-desktop.jpg"
-											srcset="
-												./assets/images/what-we-do/living-rooms/living-rooms-480/small-living-room-desktop.jpg 480w,
-												./assets/images/what-we-do/living-rooms/living-rooms-720/small-living-room-desktop.jpg 720w
-											"
-											alt="cat" />
-										<p>Small Living Room</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/living-rooms/living-rooms-320/white-and-red-sofa-designs.jpg"
-											srcset="
-												./assets/images/what-we-do/living-rooms/living-rooms-480/white-and-red-sofa-designs.jpg 480w,
-												./assets/images/what-we-do/living-rooms/living-rooms-720/white-and-red-sofa-designs.jpg 720w
-											"
-											alt="cat" />
-										<p>Elegant Living Room</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/living-rooms/living-rooms-320/minimal-living-room-design.jpg"
-											srcset="
-												./assets/images/what-we-do/living-rooms/living-rooms-480/minimal-living-room-design.jpg 480w,
-												./assets/images/what-we-do/living-rooms/living-rooms-720/minimal-living-room-design.jpg 720w
-											"
-											alt="cat" />
-										<p>Minimalist Living Room</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/living-rooms/living-rooms-320/contemporary-interior-designs.jpg"
-											srcset="
-												./assets/images/what-we-do/living-rooms/living-rooms-480/contemporary-interior-designs.jpg 480w,
-												./assets/images/what-we-do/living-rooms/living-rooms-720/contemporary-interior-designs.jpg 720w
-											"
-											alt="cat" />
-										<p>Contemporary Living Room</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/living-rooms/living-rooms-320/latest-living-room-designs.jpg"
-											srcset="
-												./assets/images/what-we-do/living-rooms/living-rooms-480/latest-living-room-designs.jpg 480w,
-												./assets/images/what-we-do/living-rooms/living-rooms-720/latest-living-room-designs.jpg 720w
-											"
-											alt="cat" />
-										<p>Industrial Living Room</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/living-rooms/living-rooms-320/rustic-living-room-desktop.jpg"
-											srcset="
-												./assets/images/what-we-do/living-rooms/living-rooms-480/rustic-living-room-desktop.jpg 480w,
-												./assets/images/what-we-do/living-rooms/living-rooms-720/rustic-living-room-desktop.jpg 720w
-											"
-											alt="cat" />
-										<p>Rustic Living Room</p>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="scroller">
-							<p>Bedroom Interiors</p>
-							<div class="carousel">
-								<ul>
-									<li>
-										<img
-											src="./assets/images/what-we-do/bedrooms/bedrooms-320/modern-bedroom-design-d.jpg"
-											srcset="
-												./assets/images/what-we-do/bedrooms/bedrooms-480/modern-bedroom-design-d.jpg 480w,
-												./assets/images/what-we-do/bedrooms/bedrooms-720/modern-bedroom-design-d.jpg 720w
-											"
-											alt="cat" />
-										<p>Modern Bedroom Design</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/bedrooms/bedrooms-320/master-bedroom-design-d.jpg"
-											srcset="
-												./assets/images/what-we-do/bedrooms/bedrooms-480/master-bedroom-design-d.jpg 480w,
-												./assets/images/what-we-do/bedrooms/bedrooms-720/master-bedroom-design-d.jpg 720w
-											"
-											alt="cat" />
-										<p>Master Bedroom Design</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/bedrooms/bedrooms-320/small-bedroom-design.jpg"
-											srcset="
-												./assets/images/what-we-do/bedrooms/bedrooms-480/small-bedroom-design.jpg 480w,
-												./assets/images/what-we-do/bedrooms/bedrooms-720/small-bedroom-design.jpg 720w
-											"
-											alt="cat" />
-										<p>Small Bedroom Design</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/bedrooms/bedrooms-320/simple-bedroom-design-d.jpg"
-											srcset="
-												./assets/images/what-we-do/bedrooms/bedrooms-480/simple-bedroom-design-d.jpg 480w,
-												./assets/images/what-we-do/bedrooms/bedrooms-720/simple-bedroom-design-d.jpg 720w
-											"
-											alt="cat" />
-										<p>Simple Bedroom Design</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/bedrooms/bedrooms-320/luxury-bedroom-design-d.jpg"
-											srcset="
-												./assets/images/what-we-do/bedrooms/bedrooms-480/luxury-bedroom-design-d.jpg 480w,
-												./assets/images/what-we-do/bedrooms/bedrooms-720/luxury-bedroom-design-d.jpg 720w
-											"
-											alt="cat" />
-										<p>Luxury Bedroom Design</p>
-									</li>
-									<li>
-										<img
-											src="./assets/images/what-we-do/bedrooms/bedrooms-320/childrens-bedroom-design-d.jpg"
-											srcset="
-												./assets/images/what-we-do/bedrooms/bedrooms-480/childrens-bedroom-design-d.jpg 480w,
-												./assets/images/what-we-do/bedrooms/bedrooms-720/childrens-bedroom-design-d.jpg 720w
-											"
-											alt="cat" />
-										<p>Children's Bedroom Design</p>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="sub-heading">and more...</div>
-						<div class="many-more-image-grid">
-							<div class="grid-item item-1">
-								<img
-									src="./assets/images/what-we-do/misc/misc-320/tiling.jpg"
-									srcset="
-										./assets/images/what-we-do/misc/misc-480/tiling.jpg   480w,
-										./assets/images/what-we-do/misc/misc-720/tiling.jpg   720w,
-										./assets/images/what-we-do/misc/misc-1080/tiling.jpg 1080w
-									"
-									alt="tiling" />
-								<p>Tiling</p>
-							</div>
-							<div class="grid-item item-2">
-								<img
-									src="./assets/images/what-we-do/misc/misc-320/office-space.jpg"
-									srcset="
-										./assets/images/what-we-do/misc/misc-480/office-space.jpg   480w,
-										./assets/images/what-we-do/misc/misc-720/office-space.jpg   720w,
-										./assets/images/what-we-do/misc/misc-1080/office-space.jpg 1080w
-									"
-									alt="office-space" />
-								<p>Commercial Space Office Setup</p>
-							</div>
-							<div class="grid-item item-3">
-								<img
-									src="./assets/images/what-we-do/misc/misc-320/vanity-unit.jpg"
-									srcset="
-										./assets/images/what-we-do/misc/misc-480/vanity-unit.jpg   480w,
-										./assets/images/what-we-do/misc/misc-720/vanity-unit.jpg   720w,
-										./assets/images/what-we-do/misc/misc-1080/vanity-unit.jpg 1080w
-									"
-									alt="vanity-unit" />
-								<p>Vanity Unit</p>
-							</div>
-							<div class="grid-item item-4">
-								<img
-									src="./assets/images/what-we-do/misc/misc-320/false-ceiling.jpg"
-									srcset="
-										./assets/images/what-we-do/misc/misc-480/false-ceiling.jpg   480w,
-										./assets/images/what-we-do/misc/misc-720/false-ceiling.jpg   720w,
-										./assets/images/what-we-do/misc/misc-1080/false-ceiling.jpg 1080w
-									"
-									alt="false-ceiling" />
-								<p>False Ceilings</p>
-							</div>
+						<div class="categories-grid-container">
+							<div class="categories-grid">
+								<a
+									href=""
+									class="category c1">
+									<img
+										class="category-img"
+										src="./assets/images/what-we-do/modular-kitchens/wooden-kitchen-ideas.jpg"
+										alt="" />
+									<p class="category-name">Kitchen</p>
+								</a>
+								<a
+									href=""
+									class="category c2">
+									<img
+										class="category-img"
+										src="./assets/images/what-we-do/bedrooms/master-bedroom-design-d.jpg"
+										alt="" />
+									<p class="category-name">Bedroom</p>
+								</a>
+								<a	
 
-							<div class="grid-item item-5">
-								<img
-									src="./assets/images/what-we-do/misc/misc-320/pooja-space.jpg"
-									srcset="
-										./assets/images/what-we-do/misc/misc-480/pooja-space.jpg   480w,
-										./assets/images/what-we-do/misc/misc-720/pooja-space.jpg   720w,
-										./assets/images/what-we-do/misc/misc-1080/pooja-space.jpg 1080w
-									"
-									alt="pooja-space" />
-								<p>Pooja Space</p>
-							</div>
-							<div class="grid-item item-6">
-								<img
-									src="./assets/images/what-we-do/misc/misc-320/wall-paintings.jpg"
-									srcset="
-										./assets/images/what-we-do/misc/misc-480/wall-paintings.jpg   480w,
-										./assets/images/what-we-do/misc/misc-720/wall-paintings.jpg   720w,
-										./assets/images/what-we-do/misc/misc-1080/wall-paintings.jpg 1080w
-									"
-									alt="wall-paintings" />
-								<p>Wall Paintings</p>
-							</div>
-							<div class="grid-item item-7">
-								<img
-									src="./assets/images/what-we-do/misc/misc-320/tv-unit.jpg"
-									srcset="
-										./assets/images/what-we-do/misc/misc-480/tv-unit.jpg   480w,
-										./assets/images/what-we-do/misc/misc-720/tv-unit.jpg   720w,
-										./assets/images/what-we-do/misc/misc-1080/tv-unit.jpg 1080w
-									"
-									alt="tv-unit" />
-								<p>Tv Unit</p>
-							</div>
-							<div class="grid-item item-8">
-								<img
-									src="./assets/images/what-we-do/misc/misc-320/utility-storage.jpg"
-									srcset="
-										./assets/images/what-we-do/misc/misc-480/utility-storage.jpg   480w,
-										./assets/images/what-we-do/misc/misc-720/utility-storage.jpg   720w,
-										./assets/images/what-we-do/misc/misc-1080/utility-storage.jpg 1080w
-									"
-									alt="utility-storage" />
-								<p>Utility Storage</p>
-							</div>
-							<div class="grid-item item-9">
-								<img
-									src="./assets/images/what-we-do/misc/misc-320/electrical-work.jpg"
-									srcset="
-										./assets/images/what-we-do/misc/misc-480/electrical-work.jpg   480w,
-										./assets/images/what-we-do/misc/misc-720/electrical-work.jpg   720w,
-										./assets/images/what-we-do/misc/misc-1080/electrical-work.jpg 1080w
-									"
-									alt="electrical-work" />
-								<p>Electrical Works</p>
-							</div>
-							<div class="grid-item item-10">
-								<img
-									src="./assets/images/what-we-do/misc/misc-320/plumbing-repair-service.jpg"
-									srcset="
-										./assets/images/what-we-do/misc/misc-480/plumbing-repair-service.jpg   480w,
-										./assets/images/what-we-do/misc/misc-720/plumbing-repair-service.jpg   720w,
-										./assets/images/what-we-do/misc/misc-1080/plumbing-repair-service.jpg 1080w
-									"
-									alt="plumbing-repair-service" />
-								<p>Plumbing Works</p>
+									href=""
+									class="category c3">
+									<img
+										class="category-img"
+										src="./assets/images/what-we-do/living-rooms/contemporary-interior-designs.jpg"
+										alt="" />
+									<p class="category-name">Living Hall</p>
+								</a>
+								<a
+									href=""
+									class="category c4">
+									<img
+										class="category-img"
+										src="./assets/images/what-we-do/misc/vanity-unit.jpg"
+										alt="" />
+									<p class="category-name">Others</p>
+								</a>
 							</div>
 						</div>
+						<a class="call-to-action-btn"
+							href="https://wa.me/9677066202"
+							target="_blank">
+							<button >
+								<p>Talk to our Consultant Now!!!</p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#ffffff"
+									width="24px"
+									height="24px"
+									viewBox="0 0 24 24"
+									id="right-arrow"
+								
+									data-name="Flat Line"
+									class="icon flat-line">
+									<line
+										id="primary"
+										x1="3"
+										y1="12"
+										x2="21"
+										y2="12"
+										style="
+											fill: none;
+											stroke: rgb(255, 255, 255);
+											stroke-linecap: round;
+											stroke-linejoin: round;
+											stroke-width: 2;
+										" />
+									<polyline
+										id="primary-2"
+										data-name="primary"
+										points="18 15 21 12 18 9"
+										style="
+											fill: none;
+											stroke: rgb(255, 255, 255);
+											stroke-linecap: round;
+											stroke-linejoin: round;
+											stroke-width: 2;
+										" />
+								</svg>
+							</button>
+						</a>
 					</div>
 				</div>
 				<div class="bottom-border">
@@ -654,7 +447,7 @@
 			<div
 				id="how-it-works"
 				class="how-it-works">
-				<h1>How It Works</h1>
+				<h1 class="heading">How We Work</h1>
 				<ul>
 					<li style="--accent-color: #1d1d27">
 						<div class="date">Understanding your needs</div>
@@ -705,6 +498,48 @@
 							class="img" />
 					</li>
 				</ul>
+				<a class="call-to-action-btn"
+							href="https://wa.me/9677066202"
+							target="_blank">
+							<button >
+								<p>Contact us for more details</p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#ffffff"
+									width="24px"
+									height="24px"
+									viewBox="0 0 24 24"
+									id="right-arrow"
+								
+									data-name="Flat Line"
+									class="icon flat-line">
+									<line
+										id="primary"
+										x1="3"
+										y1="12"
+										x2="21"
+										y2="12"
+										style="
+											fill: none;
+											stroke: rgb(255, 255, 255);
+											stroke-linecap: round;
+											stroke-linejoin: round;
+											stroke-width: 2;
+										" />
+									<polyline
+										id="primary-2"
+										data-name="primary"
+										points="18 15 21 12 18 9"
+										style="
+											fill: none;
+											stroke: rgb(255, 255, 255);
+											stroke-linecap: round;
+											stroke-linejoin: round;
+											stroke-width: 2;
+										" />
+								</svg>
+							</button>
+						</a>
 				<div class="bottom-border">
 					<svg
 						viewBox="0 0 800 90"
@@ -719,65 +554,311 @@
 				id="reviews"
 				class="reviews">
 				<div class="padding-wrapper">
-					<div class="heading">Reviews</div>
-					<div class="carousel">
-						<ul>
-							<li>
-								<img
-									src="https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
-									alt="cat" />
-								<p class="client-name">Client - Geetha</p>
-								<p class="client-review">
-									Exceptional designs, delivered on-time , highly recommend !!!
-								</p>
-							</li>
-							<li>
-								<img
-									src="https://images.pexels.com/photos/4492170/pexels-photo-4492170.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
-									alt="cat2" />
-								<p class="client-name">Client - Geetha</p>
-								<p class="client-review">
-									beautiful work, professional team. Exceeded my expectations!
-								</p>
-							</li>
-							<li>
-								<img
-									src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
-									alt="cat3" />
-								<p class="client-name">Client - Geetha</p>
-								<p class="client-review">
-									Yuvin Interiors transformed our space beautifully. Thank you!
-								</p>
-							</li>
-							<li>
-								<img
-									src="https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
-									alt="cat" />
-								<p class="client-name">Client - Geetha</p>
-								<p class="client-review">
-									Exceptional designs, delivered on-time , highly recommend !!!
-								</p>
-							</li>
-							<li>
-								<img
-									src="https://images.pexels.com/photos/4492170/pexels-photo-4492170.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
-									alt="cat2" />
-								<p class="client-name">Client - Geetha</p>
-								<p class="client-review">
-									beautiful work, professional team. Exceeded my expectations!
-								</p>
-							</li>
-							<li>
-								<img
-									src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500"
-									alt="cat3" />
-								<p class="client-name">Client - Geetha</p>
-								<p class="client-review">
-									Yuvin Interiors transformed our space beautifully. Thank you!
-								</p>
-							</li>
-						</ul>
+					<div class="heading">3000+ Satisfied Customers</div>
+					<div class="reviews-carousel">
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<div class="review-wrapper">
+									<div class="review-img-wrapper">
+										<img
+											class="review-img"
+											src="./assets/images/hero-section/hero-1.jpg"
+											alt="" />
+										<div class="quote-icon">
+											<svg
+												fill="#FAF0E6"
+												iewBox="0 0 32 32"
+												xml:space="preserve">
+												<g>
+													<path
+														d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1
+														C9.3,11.8,11,11,13,11z" />
+													<path
+														d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5
+														S25.8,13,23,13z" />
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="review-content">
+										<p class="client-review">
+											Completed on Time, very professional service. Highly
+											recommend !!!
+										</p>
+										<p class="client-name">Geetha</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-wrapper">
+									<div class="review-img-wrapper">
+										<img
+											class="review-img"
+											src="./assets/images/hero-section/hero-1.jpg"
+											alt="" />
+										<div class="quote-icon">
+											<svg
+												fill="#FAF0E6"
+												iewBox="0 0 32 32"
+												xml:space="preserve">
+												<g>
+													<path
+														d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1
+														C9.3,11.8,11,11,13,11z" />
+													<path
+														d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5
+														S25.8,13,23,13z" />
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="review-content">
+										<p class="client-review">
+											Completed on Time, very professional service. Highly
+											recommend !!!
+										</p>
+										<p class="client-name">Geetha</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-wrapper">
+									<div class="review-img-wrapper">
+										<img
+											class="review-img"
+											src="./assets/images/hero-section/hero-1.jpg"
+											alt="" />
+										<div class="quote-icon">
+											<svg
+												fill="#FAF0E6"
+												iewBox="0 0 32 32"
+												xml:space="preserve">
+												<g>
+													<path
+														d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1
+														C9.3,11.8,11,11,13,11z" />
+													<path
+														d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5
+														S25.8,13,23,13z" />
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="review-content">
+										<p class="client-review">
+											Completed on Time, very professional service. Highly
+											recommend !!!
+										</p>
+										<p class="client-name">Geetha</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-wrapper">
+									<div class="review-img-wrapper">
+										<img
+											class="review-img"
+											src="./assets/images/hero-section/hero-1.jpg"
+											alt="" />
+										<div class="quote-icon">
+											<svg
+												fill="#FAF0E6"
+												iewBox="0 0 32 32"
+												xml:space="preserve">
+												<g>
+													<path
+														d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1
+														C9.3,11.8,11,11,13,11z" />
+													<path
+														d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5
+														S25.8,13,23,13z" />
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="review-content">
+										<p class="client-review">
+											Completed on Time, very professional service. Highly
+											recommend !!!
+										</p>
+										<p class="client-name">Geetha</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-wrapper">
+									<div class="review-img-wrapper">
+										<img
+											class="review-img"
+											src="./assets/images/hero-section/hero-1.jpg"
+											alt="" />
+										<div class="quote-icon">
+											<svg
+												fill="#FAF0E6"
+												iewBox="0 0 32 32"
+												xml:space="preserve">
+												<g>
+													<path
+														d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1
+														C9.3,11.8,11,11,13,11z" />
+													<path
+														d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5
+														S25.8,13,23,13z" />
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="review-content">
+										<p class="client-review">
+											Completed on Time, very professional service. Highly
+											recommend !!!
+										</p>
+										<p class="client-name">Geetha</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-wrapper">
+									<div class="review-img-wrapper">
+										<img
+											class="review-img"
+											src="./assets/images/hero-section/hero-1.jpg"
+											alt="" />
+										<div class="quote-icon">
+											<svg
+												fill="#FAF0E6"
+												iewBox="0 0 32 32"
+												xml:space="preserve">
+												<g>
+													<path
+														d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1
+														C9.3,11.8,11,11,13,11z" />
+													<path
+														d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5
+														S25.8,13,23,13z" />
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="review-content">
+										<p class="client-review">
+											Completed on Time, very professional service. Highly
+											recommend !!!
+										</p>
+										<p class="client-name">Geetha</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-wrapper">
+									<div class="review-img-wrapper">
+										<img
+											class="review-img"
+											src="./assets/images/hero-section/hero-1.jpg"
+											alt="" />
+										<div class="quote-icon">
+											<svg
+												fill="#FAF0E6"
+												iewBox="0 0 32 32"
+												xml:space="preserve">
+												<g>
+													<path
+														d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1
+														C9.3,11.8,11,11,13,11z" />
+													<path
+														d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5
+														S25.8,13,23,13z" />
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="review-content">
+										<p class="client-review">
+											Completed on Time, very professional service. Highly
+											recommend !!!
+										</p>
+										<p class="client-name">Geetha</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-wrapper">
+									<div class="review-img-wrapper">
+										<img
+											class="review-img"
+											src="./assets/images/hero-section/hero-1.jpg"
+											alt="" />
+										<div class="quote-icon">
+											<svg
+												fill="#FAF0E6"
+												iewBox="0 0 32 32"
+												xml:space="preserve">
+												<g>
+													<path
+														d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1
+														C9.3,11.8,11,11,13,11z" />
+													<path
+														d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5
+														S25.8,13,23,13z" />
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="review-content">
+										<p class="client-review">
+											Completed on Time, very professional service. Highly
+											recommend !!!
+										</p>
+										<p class="client-name">Geetha</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews-carousel-pagination"></div>
 					</div>
+					<a class="call-to-action-btn"
+							href="https://wa.me/9677066202"
+							target="_blank">
+							<button >
+								<p>Talk to our Experts Now!!!</p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="#ffffff"
+									width="24px"
+									height="24px"
+									viewBox="0 0 24 24"
+									id="right-arrow"
+								
+									data-name="Flat Line"
+									class="icon flat-line">
+									<line
+										id="primary"
+										x1="3"
+										y1="12"
+										x2="21"
+										y2="12"
+										style="
+											fill: none;
+											stroke: rgb(255, 255, 255);
+											stroke-linecap: round;
+											stroke-linejoin: round;
+											stroke-width: 2;
+										" />
+									<polyline
+										id="primary-2"
+										data-name="primary"
+										points="18 15 21 12 18 9"
+										style="
+											fill: none;
+											stroke: rgb(255, 255, 255);
+											stroke-linecap: round;
+											stroke-linejoin: round;
+											stroke-width: 2;
+										" />
+								</svg>
+							</button>
+						</a>
 				</div>
 				<div class="bottom-border">
 					<svg
@@ -797,7 +878,7 @@
 					<div class="content">
 						<div class="map">
 							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1156.1671172175852!2d80.17862392288133!3d12.916259789311425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1697234548423!5m2!1sen!2sin"
+								src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3889.1104847730157!2d80.16634747507524!3d12.900616587408294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU0JzAyLjIiTiA4MMKwMTAnMDguMSJF!5e0!3m2!1sen!2sin!4v1708707401171!5m2!1sen!2sin"
 								width="100%"
 								height="100%"
 								style="border: 0"
@@ -805,11 +886,12 @@
 								loading="lazy"
 								referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
-						<div class="content-2">
+						<div class="address-and-contact">
 							<div class="address-section">
 								<p class="address-heading">Office Address</p>
 								<p class="address">
-									8/456, gandhi street, vijayanagaram, medavakkam, chennai - 600100
+									10/176, Anjaneyar Kovil street, Santhosapuram, Vengaivasal,
+									Chennai - 600073
 								</p>
 							</div>
 							<div class="connect-prompt">
@@ -1041,5 +1123,6 @@
 				</div>
 			</div>
 		</main>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	</body>
 </html>
