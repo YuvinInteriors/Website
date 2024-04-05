@@ -207,6 +207,7 @@ main a.call-to-action-btn button {
   color: white;
   text-shadow: #1d1d27;
   pointer-events: all;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -274,6 +275,7 @@ main .hero-section .hero-overlay .hero-prompt a button {
   color: white;
   text-shadow: #1d1d27;
   pointer-events: all;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
