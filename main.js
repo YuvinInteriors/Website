@@ -72,3 +72,80 @@ const reviews_carousel = new Swiper('.reviews-carousel', {
         el: ".reviews-carousel-pagination",
       },
 })
+
+// Navigation highlighting logic
+const sections = document.querySelectorAll('main > div[id], #home');
+const topNavItems = document.querySelectorAll('.top-menu .nav-items .menu__item');
+const navItemsContainer = document.querySelector('.top-menu .nav-items');
+
+function updateHighlighter(activeItem) {
+    if (!activeItem) return;
+    
+    const itemRect = activeItem.getBoundingClientRect();
+    const containerRect = navItemsContainer.getBoundingClientRect();
+    
+    // Calculate the left position and width for the highlighter
+    const left = itemRect.left - containerRect.left;
+    const width = itemRect.width;
+    
+    // Update the highlighter position
+    navItemsContainer.style.setProperty('--highlight-left', `${left}px`);
+    navItemsContainer.style.setProperty('--highlight-width', `${width}px`);
+}
+
+function resetActiveState() {
+    topNavItems.forEach(item => {
+        item.classList.remove('active');
+    });
+}
+
+const observerCallback = (entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            resetActiveState();
+            const targetId = entry.target.id;
+            const correspondingNavItem = document.querySelector(`.top-menu .nav-items .menu__item[href="#${targetId}"]`);
+            if (correspondingNavItem) {
+                correspondingNavItem.classList.add('active');
+                updateHighlighter(correspondingNavItem);
+            }
+        }
+    });
+};
+
+const observerOptions = {
+    root: null,
+    rootMargin: '-20% 0px',
+    threshold: 0
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+
+// Handle click events on nav items
+topNavItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = item.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        resetActiveState();
+        item.classList.add('active');
+        //updateHighlighter(item);
+        
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+// Update highlighter on resize
+window.addEventListener('resize', () => {
+    const activeItem = document.querySelector('.top-menu .nav-items .menu__item.active');
+    if (activeItem) {
+        updateHighlighter(activeItem);
+    }
+});

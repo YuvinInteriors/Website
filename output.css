@@ -117,7 +117,7 @@ html {
   height: 48px;
   display: flex;
   align-items: center;
-  min-width: fit-content;
+  flex-shrink: 0;
 }
 .top-menu .logo svg {
   width: 48px;
@@ -129,19 +129,38 @@ html {
 .top-menu .logo p {
   margin-left: 16px;
   color: white;
+  white-space: nowrap;
 }
 .top-menu .nav-items {
   display: flex;
-  width: 100%;
-  justify-content: end;
+  justify-content: flex-end;
+  margin-left: 32px;
+  flex-grow: 1;
+  position: relative;
+}
+.top-menu .nav-items::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  background-color: white;
+  width: var(--highlight-width, 0);
+  left: var(--highlight-left, 0);
+  transition: all 0.3s ease;
 }
 .top-menu .nav-items .menu__item {
   text-decoration: none;
   display: flex;
+  position: relative;
 }
 .top-menu .nav-items .menu__item p {
   margin: 0px 16px;
   color: white;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+.top-menu .nav-items .menu__item.active p {
+  color: #faf0e6;
 }
 
 .floating_icons_container {

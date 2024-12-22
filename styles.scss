@@ -123,7 +123,7 @@ html {
 		height: 48px;
 		display: flex;
 		align-items: center;
-		min-width: fit-content;
+		flex-shrink: 0;
 		svg {
 			width: 48px;
 			height: 48px;
@@ -134,18 +134,41 @@ html {
 		p {
 			margin-left: 16px;
 			color: white;
+			white-space: nowrap;
 		}
 	}
 	.nav-items {
 		display: flex;
-		width: 100%;
-		justify-content: end;
+		justify-content: flex-end;
+		margin-left: 32px;
+		flex-grow: 1;
+		position: relative;
+		
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			height: 2px;
+			background-color: white;
+			width: var(--highlight-width, 0);
+			left: var(--highlight-left, 0);
+			transition: all 0.3s ease;
+		}
+		
 		.menu__item {
 			text-decoration: none;
 			display: flex;
+			position: relative;
 			p {
 				margin: 0px 16px;
 				color: white;
+				transition: color 0.3s ease;
+				white-space: nowrap;
+			}
+			&.active {
+				p {
+					color: #faf0e6;
+				}
 			}
 		}
 	}
